@@ -2,3 +2,4 @@ images/*
 vorlage.html
 styles.css
 LICENSE
+include/config.incl.php

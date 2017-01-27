@@ -42,3 +42,4 @@
   }
   </style>
 </head>
+<?php include_once("include/config.incl.php"); ?>
