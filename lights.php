@@ -31,7 +31,8 @@
                 <h2 class="mdl-card__title-text">Ecklampe</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein/Aus</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_mystrom('mystrom3.home', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_mystrom('mystrom3.home', 'off')">Aus</a>
               </div>
             </div>
             <div class="demo-separator mdl-cell--2-col"></div>
@@ -41,7 +42,8 @@
                 <h2 class="mdl-card__title-text">Kugellampe</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein/Aus</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_mystrom('mystrom2.home', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_mystrom('mystrom2.home', 'off')">Aus</a>
               </div>
             </div>
 
@@ -52,8 +54,9 @@
                 <h2 class="mdl-card__title-text">Stimmungslicht</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein/Aus</a>
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Steuerung</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_nrdylight_set('on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_nrdylight_set('off')">Aus</a>
+                <a href="light_nrdylight.php" class="mdl-button mdl-js-button mdl-js-ripple-effect">Stimmung</a>
               </div>
             </div>
             <div class="demo-separator mdl-cell--2-col"></div>
@@ -63,8 +66,8 @@
                 <h2 class="mdl-card__title-text">Balkonlichter</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein/Aus</a>
-
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_ediplug('ediplug1.home', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="light_ediplug('ediplug1.home', 'off')">Aus</a>
               </div>
             </div>
           </div>

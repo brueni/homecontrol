@@ -41,5 +41,6 @@
     z-index: 900;
   }
   </style>
+<?php include_once("include/script.incl.php"); ?>
 </head>
 <?php include_once("include/config.incl.php"); ?>
