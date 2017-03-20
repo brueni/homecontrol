@@ -218,6 +218,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 
 #MyCSS
+
 .lights .mdl-card__title {
   min-height: 200px;
   background-position: 90% 100%;
@@ -225,17 +226,63 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .lights-eck .mdl-card__title {
   background-image: url('images/lights-eck.png');
+  background-size: cover;
 }
 .lights-kugel .mdl-card__title {
   background-image: url('images/lights-kugel.png');
+  background-size: cover;
 }
 .lights-ambient .mdl-card__title {
   background-image: url('images/lights-ambient.png');
+  background-size: cover;
 }
 .lights-balcony .mdl-card__title {
   background-image: url('images/lights-balcony.png');
+  background-size: cover;
+}
+.lights-stand .mdl-card__title {
+  background-image: url('images/lights-stand.png');
+  background-size: cover;
+}
+.lights-scene_tv .mdl-card__title {
+  background-image: url('images/lights-scene_tv.png');
+  background-size: cover;
+}
+.lights-scene_rainbow .mdl-card__title {
+  background-image: url('images/lights-scene_rainbow.png');
+  background-size: cover;
+}
+.lights-scene_blue-evening .mdl-card__title {
+  background-image: url('images/lights-scene_blue-evening.png');
+  background-size: cover;
+}
+.lights-scene_forest .mdl-card__title {
+  background-image: url('images/lights-scene_forest.png');
+  background-size: cover;
+}
+.lights-scene_rain .mdl-card__title {
+  background-image: url('images/lights-scene_rain.png');
+  background-size: cover;
+}
+.lights-scene_romance .mdl-card__title {
+  background-image: url('images/lights-scene_romance.png');
+  background-size: cover;
+}
+.lights-scene_sunrise .mdl-card__title {
+  background-image: url('images/lights-scene_sunrise.png');
+  background-size: cover;
+}
+.lights-scene_sunset .mdl-card__title {
+  background-image: url('images/lights-scene_sunset.png');
+  background-size: cover;
 }
 
+.card-small {
+  min-height: 100px;
+}
+.card-medium {
+  min-height: 145px;
+}
 .lights-ambient-btn {
   min-height: 100px;
 }
