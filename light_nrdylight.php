@@ -37,56 +37,56 @@
             <div class="demo-separator mdl-cell--2-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"></div>
 
             <div class="lights-scene_tv card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'tv-dimmed', 'all-70', '-')">
+            onclick="light_nrdylight_ctrl('static', 'tv-dimmed', 'all-70', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">TV-Licht</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_rainbow card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'rainbow', 'all-100', '-')">
+            onclick="light_nrdylight_ctrl('static', 'rainbow', 'all-100', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Regenbogen</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_sunrise card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'morgenrot', 'all-100', '-')">
+            onclick="light_nrdylight_ctrl('static', 'morgenrot', 'all-100', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Sonnenaufgang</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_sunset card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'abendrot', 'all-100', '-')">
+            onclick="light_nrdylight_ctrl('static', 'abendrot', 'all-100', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Sonnenuntergang</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_blue-evening card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'blue-evening', 'all-100', '-')">
+            onclick="light_nrdylight_ctrl('static', 'blue-evening', 'all-100', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Blauer Abend</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_rain card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'regentag', 'all-10', '-')">
+            onclick="light_nrdylight_ctrl('static', 'regentag', 'all-10', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Regentag</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_romance card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'romantik', 'all-70', '-')">
+            onclick="light_nrdylight_ctrl('static', 'romantik', 'all-70', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Romantik</h2>
               </div></a>
             </div>
 
             <div class="lights-scene_forest card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--4-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'wald', 'all-100', '-')">
+            onclick="light_nrdylight_ctrl('static', 'wald', 'all-100', '-')">
               <a href="#" style="text-decoration:none"><div class="lights-ambient-btn mdl-card__title mdl-card--expand ">
                 <h2 class="mdl-card__title-text">Wald</h2>
               </div></a>
@@ -95,39 +95,39 @@
             <div class="demo-separator mdl-cell--2-col mdl-cell--8-col-tablet mdl-cell--4-col-phone"></div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-phone mdl-cell--8-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-warmwhite', 'all-100', '-')" style="background-color: #fff2df">
+            onclick="light_nrdylight_ctrl('static', 'all-warmwhite', 'all-100', '-')" style="background-color: #fff2df">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-red', 'all-100', '-')" style="background-color: #df0b0b">
+            onclick="light_nrdylight_ctrl('static', 'all-red', 'all-100', '-')" style="background-color: #df0b0b">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-orange', 'all-100', '-')" style="background-color: #df5e0b">
+            onclick="light_nrdylight_ctrl('static', 'all-orange', 'all-100', '-')" style="background-color: #df5e0b">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-yellow', 'all-100', '-')" style="background-color: #dfd00b">
+            onclick="light_nrdylight_ctrl('static', 'all-yellow', 'all-100', '-')" style="background-color: #dfd00b">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-green', 'all-100', '-')" style="background-color: #069d03">
+            onclick="light_nrdylight_ctrl('static', 'all-green', 'all-100', '-')" style="background-color: #069d03">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-cyan', 'all-100', '-')" style="background-color: #02cbbf">
+            onclick="light_nrdylight_ctrl('static', 'all-cyan', 'all-100', '-')" style="background-color: #02cbbf">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-blue', 'all-100', '-')" style="background-color: #0b1adf">
+            onclick="light_nrdylight_ctrl('static', 'all-blue', 'all-100', '-')" style="background-color: #0b1adf">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-purple', 'all-100', '-')" style="background-color: #a000b4">
+            onclick="light_nrdylight_ctrl('static', 'all-purple', 'all-100', '-')" style="background-color: #a000b4">
             </div>
 
             <div class="lights-ambient-btn card-small mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--2-col-phone mdl-cell--2-col-tablet"
-            onclick="light_nrdylight_ctrl('-', 'all-white', 'all-100', '-')" style="background-color: #d4e6fe">
+            onclick="light_nrdylight_ctrl('static', 'all-white', 'all-100', '-')" style="background-color: #d4e6fe">
             </div>
 
             <!--<div class="demo-separator mdl-cell--2-col"></div>-->
