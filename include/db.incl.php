@@ -20,7 +20,7 @@ else
 		exit;
 	}
 }
-*/
+
 $db2 = mysql_connect($servers['host2'], $servers['user2'], $servers['password2'], true);
 if (!$db2)
 {
@@ -41,3 +41,4 @@ else
 }
 
 ?>
+*/
