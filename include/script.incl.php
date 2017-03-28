@@ -4,6 +4,12 @@
   $.get(lighturl, function(data) {
   });
 }*/
+function dev_power(device, aktion) {
+  var xhr = new XMLHttpRequest();
+  var requesturl = "http://homecontrol-backend.home/homecontrol-backend/dev_power.php?dev=" + device + "&action=" + aktion;
+  xhr.open('GET', requesturl);
+  xhr.send();
+}
 
 function light_mystrom(device, aktion) {
   var xhr = new XMLHttpRequest();

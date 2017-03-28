@@ -224,6 +224,10 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }
+.devices {
+ background-color: steelblue;
+}
+
 .lights-eck .mdl-card__title {
   background-image: url('images/lights-eck.png');
   background-size: cover;

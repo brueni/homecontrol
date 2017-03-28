@@ -26,39 +26,38 @@
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-            <div class="devices devices-nas mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">NAS</h2>
+
+            <div class="card-medium mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="devices mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">Mediacenter</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein</a>
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Aus</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('htpc', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('htpc', 'off')">Aus</a>
               </div>
             </div>
-            <div class="demo-separator mdl-cell--2-col"></div>
+            <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="devices devices-srv1 mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="card-medium mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="devices mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Server</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein</a>
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Aus</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('srv1', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('srv1', 'off')">Aus</a>
               </div>
             </div>
+            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="demo-separator mdl-cell--12-col"></div>
-
-            <div class="devices devices-htpc mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">HTPC</h2>
+            <div class="card-medium mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="devices mdl-card__title mdl-card--expand">
+                <h2 class="mdl-card__title-text">NAS</h2>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Ein</a>
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Aus</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('nas3270', 'on')">Ein</a>
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect" onclick="dev_power('nas3270', 'off')">Aus</a>
               </div>
             </div>
-            <div class="demo-separator mdl-cell--2-col"></div>
 
           </div>
         </div>
