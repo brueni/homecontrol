@@ -224,8 +224,12 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }
-.devices {
+.devices{
  background-color: steelblue;
+}
+
+.temperatures{
+  background-color: coral;
 }
 
 .lights-eck .mdl-card__title {
@@ -281,6 +285,8 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-size: cover;
 }
 
+
+
 .card-small {
   min-height: 100px;
 }
@@ -294,7 +300,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 .mdl-card__value-big {
   min-height: 100px;
   color: rgba(0,0,0,.54);
-  font-size: 4rem;
+  font-size: 2.6rem;
   line-height: 100px;
   overflow: hidden;
   padding: 16px;

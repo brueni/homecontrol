@@ -22,97 +22,113 @@
       <?php
       $pagetitle="Temperaturen";
       include_once("include/top-header.incl.php");
-      include_once("include/nav.incl.php"); ?>
+      include_once("include/nav.incl.php");
+      $statefiles = array(
+        "example_t",
+        "example_h"
+      );
+      $i="0";
+      while($i < count($statefiles)) {
+        $current_file = "states/" . $statefiles[$i] . "_current.txt";
+        $current_state = "state" . $i;
+        $statefile = fopen($current_file, "r") or die("Unable to open file!");
+        $state_tmp = fread($statefile,filesize($current_file));
+        $$current_state = explode('.', $state_tmp);
+        fclose($statefile);
+        $i++;
+      }
+      ?>
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-            <div class="temperatures temperatures-buero mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+
+            <div class="temperatures-buero mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">B&uuml;ro</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state0['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state1['0'];?>%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--2-col"></div>
+            <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-schlafzimmer mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-schlafzimmer mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Schlafzimmer</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--12-col"></div>
+            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-wohnzimmer mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-wohnzimmer mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Wohnzimmer</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--2-col"></div>
+            <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-aussen mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-aussen mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Aussen</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--12-col"></div>
+            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-rack mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-rack mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Rack</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--2-col"></div>
+            <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-sicherungskasten mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-sicherungskasten mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Sicherungskasten</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--12-col"></div>
+            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-keller mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-keller mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Keller</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--2-col"></div>
+            <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 
-            <div class="temperatures temperatures-gefriertruhe mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
+            <div class="temperatures-gefriertruhe mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet">
+              <div class="temperatures mdl-card__title mdl-card--expand">
                 <h2 class="mdl-card__title-text">Gefriertruhe</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col">99&deg;C.</div>
-                <div class="mdl-cell mdl-cell--6-col">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
               </div>
             </div>
-            <div class="demo-separator mdl-cell mdl-cell--12-col"></div>
+            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           </div>
         </div>
       </main>
