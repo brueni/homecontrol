@@ -24,15 +24,29 @@
       include_once("include/top-header.incl.php");
       include_once("include/nav.incl.php");
       $statefiles = array(
-        "example_t",
-        "example_h"
+        "buero_t",
+        "buero_h",
+        "schlaf_t",
+        "schlaf_h",
+        "wohn_t",
+        "wohn_h",
+        "outdoor_t",
+        "outdoor_h",
+        "rack_t",
+        "rack_h",
+        "sicherung_t",
+        "sicherung_h",
+        "keller_t",
+        "keller_h",
+        "gefrier_t",
+        "gefrier_h"
       );
       $i="0";
       while($i < count($statefiles)) {
-        $current_file = "states/" . $statefiles[$i] . "_current.txt";
+        $current_file = "http://srv3.home/homecontrol-backend/states/temperatures/current/" . $statefiles[$i] . "_current.txt";
         $current_state = "state" . $i;
         $statefile = fopen($current_file, "r") or die("Unable to open file!");
-        $state_tmp = fread($statefile,filesize($current_file));
+        $state_tmp = fread($statefile, 4);
         $$current_state = explode('.', $state_tmp);
         fclose($statefile);
         $i++;
@@ -58,8 +72,8 @@
                 <h2 class="mdl-card__title-text">Schlafzimmer</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state2['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state3['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -69,8 +83,8 @@
                 <h2 class="mdl-card__title-text">Wohnzimmer</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state4['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state5['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -80,8 +94,8 @@
                 <h2 class="mdl-card__title-text">Aussen</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state6['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state7['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -91,8 +105,8 @@
                 <h2 class="mdl-card__title-text">Rack</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state8['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state9['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -102,8 +116,8 @@
                 <h2 class="mdl-card__title-text">Sicherungskasten</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state10['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state11['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -113,8 +127,8 @@
                 <h2 class="mdl-card__title-text">Keller</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state12['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state13['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -124,8 +138,8 @@
                 <h2 class="mdl-card__title-text">Gefriertruhe</h2>
               </div>
               <div class="mdl-card__value-big mdl-card--border mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">99&deg;</div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet">55%</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state14['0'];?>&deg;</div>
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--3-col-tablet"><?php echo $state15['0'];?>%</div>
               </div>
             </div>
             <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
@@ -133,7 +147,7 @@
         </div>
       </main>
     </div>
-    <a href="temperatures-diagrams.php" id="bottom-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color-text--white">Diagramme</a>
+    <a href="temperatures-graphs.php" id="bottom-button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color-text--white">Diagramme</a>
     <?php include_once("include/scriptsource.incl.php"); ?>
   </body>
 </html>
