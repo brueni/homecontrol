@@ -54,9 +54,9 @@
                     case "f3m":
                     case "f1y":
 
-                            return "http://homecontrol-backend.home/homecontrol-backend/states/temperatures/xml/all_" + urlParameter + ".xml";
+                            return "http://srv3.home/homecontrol-backend/states/temperatures/xml/all_" + urlParameter + ".xml";
                     }
-                    return "http://homecontrol-backend.home/homecontrol-backend/states/temperatures/xml/all_t24h.xml";
+                    return "http://srv3.home/homecontrol-backend/states/temperatures/xml/all_t24h.xml";
             }
 
     function GetChartTitle() {
@@ -166,7 +166,7 @@
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <?php
-      $pagetitle="Temperaturen";
+      $pagetitle="Diagramme";
       include_once("include/top-header.incl.php");
       include_once("include/nav.incl.php");
       ?>
