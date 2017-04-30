@@ -20,11 +20,11 @@ else
 		exit;
 	}
 }
-
+*/
 $db2 = mysql_connect($servers['host2'], $servers['user2'], $servers['password2'], true);
 if (!$db2)
 {
-	echo "Keine Verbindung zu Datenbank-Server $servers[host2] m�glich! Bitte kontaktieren Sie den Administrator";
+	echo "Keine Verbindung zu Datenbank-Server $servers[host2] moeglich!";
 	exit;
 }
 else
@@ -41,4 +41,3 @@ else
 }
 
 ?>
-*/

@@ -219,7 +219,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 #MyCSS
 
-.lights .mdl-card__title {
+.lights .category .mdl-card__title {
   min-height: 200px;
   background-position: 90% 100%;
   background-repeat: no-repeat;
