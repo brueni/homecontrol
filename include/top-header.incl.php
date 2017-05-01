@@ -34,6 +34,19 @@
         <a href=\"?h3m\"><li class=\"mdl-menu__item\">3 Monate</li></a>
         <a href=\"?h1y\"><li class=\"mdl-menu__item\">1 Jahr</li></a>
       </ul>";
-    } ?>
+    } elseif(isset($pagetitle2)) {
+      if($pagetitle2=="homecinema-selection") {
+        echo "<button class=\"mdl-button mdl-js-button mdl-button--icon\" onclick=\"location.href='?category=" . $_GET['category'] . "';\">
+                <i class=\"material-icons\">all_inclusive</i>
+              </button>
+              <button class=\"mdl-button mdl-js-button mdl-button--icon\" onclick=\"location.href='?category=" . $_GET['category'] . "&view=1';\">
+                <i class=\"material-icons\">visibility</i>
+              </button>
+              <button class=\"mdl-button mdl-js-button mdl-button--icon\" onclick=\"location.href='?category=" . $_GET['category'] . "&view=0';\">
+                <i class=\"material-icons\">visibility_off</i>
+              </button>";
+      }
+    }
+    ?>
   </div>
 </header>

@@ -285,7 +285,14 @@ _:-ms-input-placeholder, :root .demo-graph {
   background-size: cover;
 }
 
-
+.movie-play,
+.movie-title,
+.movie-lang,
+.movie-location,
+.movie-length {
+ background-color: #cfd8dc;
+ color: black;
+}
 
 .card-small {
   min-height: 100px;

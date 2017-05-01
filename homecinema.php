@@ -30,7 +30,7 @@
               $i="1";
               $category_result = mysql_query("SELECT * FROM video_alben", $db2);
               while ($categories = mysql_fetch_assoc($category_result)) {
-                echo "<div class=\"card-medium category mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet\" onclick=\"javascript:location.href='tbd'\">
+                echo "<div class=\"card-medium category mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet\" onclick=\"javascript:location.href='homecinema_movies.php?category=" . $categories['id'] . "&view=0'\">
                   <div class=\"mdl-card__title mdl-card--expand\" style=\"background-color:#" . $categories['farbe'] . "; background-image: url('images/" . $categories['bild'] . "')\">
                     <h2 class=\"mdl-card__title-text\">" . $categories['name'] . "</h2>
                   </div>
