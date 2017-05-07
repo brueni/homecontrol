@@ -20,7 +20,7 @@
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <?php
-      $pagetitle="Homecinema";
+      $pagetitle="Serien";
       include_once("include/top-header.incl.php");
       include_once("include/nav.incl.php"); ?>
       <main class="mdl-layout__content mdl-color--grey-100">
@@ -28,12 +28,12 @@
           <div class="demo-cards mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
             <?php
               $i="1";
-              $category_result = mysql_query("SELECT * FROM video_alben", $db2);
-              while ($categories = mysql_fetch_assoc($category_result)) {
+              $series_result = mysql_query("SELECT * FROM serien", $db2);
+              while ($series = mysql_fetch_assoc($series_result)) {
                 echo "<div class=\"card-medium category mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet\"
-                onclick=\"javascript:location.href='homecinema_movies.php?category=" . $categories['id'] . "&view=0'\">
-                  <div class=\"mdl-card__title mdl-card--expand\" style=\"background-color:#" . $categories['farbe'] . "; background-image: url('images/" . $categories['bild'] . "')\">
-                    <h2 class=\"mdl-card__title-text\">" . $categories['name'] . "</h2>
+                onclick=\"javascript:location.href='series_seasons.php?serie=" . $series['id'] . "'\">
+                  <div class=\"mdl-card__title mdl-card--expand\" style=\"background-image: url('images/movie_cover/" . $series['logo'] . "')\">
+                    <h2 class=\"mdl-card__title-text\">" . $series['name'] . "</h2>
                   </div>
                 </div>";
                 if($i % 2 != 0) { //check if even or odd
@@ -44,15 +44,6 @@
                 $i++;
         			}
             ?>
-
-            <!--<div class="card-medium lights lights-eck mdl-card mdl-shadow--2dp mdl-cell mdl-cell--5-col mdl-cell--4-col-tablet" onclick="light_mystrom('mystrom3.home', 'toggle')">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">Ecklampe</h2>
-              </div>
-            </div>
-            <div class="demo-separator mdl-cell--12-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>-->
-
-
           </div>
         </div>
       </main>

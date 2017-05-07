@@ -315,6 +315,19 @@ _:-ms-input-placeholder, :root .demo-graph {
   vertical-align: middle;
 }
 
+.button-episode {
+  text-align: left;
+  width: 100%;
+}
+
+.button-episode-watched0 {
+  background-color: #c0392b;
+}
+
+.button-episode-watched1 {
+  background-color: #27ae60;
+}
+
 #bottom-button {
     position: fixed;
     display: block;
